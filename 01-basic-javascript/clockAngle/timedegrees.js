@@ -19,4 +19,4 @@ function calcDegrees(hr, min) {
 
 console.log(hours + ":" + minutes);
 */
-calcDegrees(1, 50);
+calcDegrees(2, 50);
