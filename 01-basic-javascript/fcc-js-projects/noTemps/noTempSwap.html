@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');</script>
+		<script>
+			function noTempSwap(a,b){
+				console.log("a: " + a + "\tb: " + b);
+				a += b;
+				b = a - b;
+				a -= b;
+				console.log("a: " + a + "\tb: " + b);
+			}
+
+			noTempSwap(0,-7);
+		</script>
+		<style>
+			code
+			{
+				font-family: "courier new";
+				font-size: 10pt;
+				font-weight:bold;
+				color:red;
+				line-height:1.5em;
+				margin:0 0 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Swap 2 Numbers without a Temp variable</h2>
+			<code>
+				function noTempSwap(a,b)<br>
+				{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a += b;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b = a - b;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a -= b;<br>
+				}<br><br>
+
+				noTempSwap(5,7);
+			</code>
+	</body>
+</html>

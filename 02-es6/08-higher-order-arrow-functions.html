@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			//Setup
+			const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34];
+
+			const squareList = (arr) => {
+				"use strict";
+				
+			/****************************************/
+
+				const squaredIntegers = arr
+
+				.filter((num) => ((num > 0) && ((num % Math.round(num - .5) === 0))))
+				.map((num) => num*num);
+
+				return squaredIntegers;
+
+			/****************************************/
+
+			};
+
+/*			function squareList(arr)
+			{
+
+				var squaredIntegers = [];
+
+				for(var i = 0; i < arr.length; i++)
+				{
+					num = arr[i];
+					if((num > 0) && (num%parseInt(num) === 0))
+					{
+						squaredIntegers.push(Math.pow(num, 2));
+					}
+		  		}
+		  		
+		  		return squaredIntegers;
+			};
+*/
+			// test your code
+			const squaredIntegers = squareList(realNumberArray);
+			console.log(squaredIntegers);
+		</script>
+	</body>
+</html>

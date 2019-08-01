@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');</script>
+		<script>
+			function fib(a)
+			{
+			
+				var f = 0; var f1 = 0, f2 = 1;
+
+                if ((a === 0) || (a === 1))
+                {
+				    f = a;
+					console.log("Section 1: " + a + ": " + f);
+				 	return;
+				}
+				for (var x = -1;x < a; x++)
+				{
+					{   
+						console.log(x + ": " + f);
+						f = f1 + f2;
+					}
+					f1 = f2; f2 = f;
+				}
+                return;
+			}
+
+			fib(2);
+		</script>
+		<style>
+			code
+			{
+				font-family: "courier new";
+				font-size: 10pt;
+				font-weight:bold;
+				color:#bb0000;
+				line-height:1.5em;
+				margin:0 0 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Calculate the (N)th Fibonacci Value</h2>
+			<code>
+				function fib(val)<br>
+				{<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+				}
+			</code>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			//Setup
+			var people = [
+			    {	'firstName': 'Akira',		'lastName': 'Laine',	'job' : 'coder',		'type' : 'muggle'	},
+			    {	'firstName': 'Harry',		'lastName': 'Potter',	'job' : 'auror',		'type' : 'wizard'	},
+			    {	'firstName': 'Sherlock',	'lastName': 'Holmes',	'job' : 'detective',	'type' : 'muggle'	},
+			    {	'firstName': 'Kristian',	'lastName': 'Vos',		'job' : 'coder',		'type' : 'muggle'	}
+			];
+
+			const muggles = people.filter((people) => people.type === 'muggle');
+
+			const names = people.map((people) => people.firstName + " is a " + people.job);
+
+			const mugpro = people.filter((people) => people.type === 'muggle').map((people) => people.firstName + " is a " + people.job);
+
+			console.log(muggles);
+
+			console.log(names);
+
+			console.log(mugpro);
+
+		</script>
+	</body>
+</html>
