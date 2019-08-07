@@ -1,0 +1,31 @@
+body
+{
+    background-color: rgba(0,0,0,1);
+    color:rgb(255, 196, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-decoration: underline double;
+    font-size: 1.25em;
+}
+
+li{
+    list-style-type:decimal-leading-zero;
+    color:rgba(255, 0, 0, 1);
+    margin: .75em 0;
+}
+
+a{
+    color:rgba(255, 0, 0, 1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(255, 196,0,1);
+}
+
+li.home{
+    list-style-type:none;
+}
