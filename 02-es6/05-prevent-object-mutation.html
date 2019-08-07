@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function freezeObj() {
+                "use strict";
+                const MATH_CONSTANTS = {
+                    PI: 3.14
+                };
+                // change code below this line
+
+                Object.freeze(MATH_CONSTANTS);
+
+                // change code above this line
+                try {
+                    MATH_CONSTANTS.PI = 99;
+                }
+                catch( ex ) {
+                    console.log(ex);
+                }
+                return MATH_CONSTANTS.PI;
+            }
+            const PI = freezeObj();
+
+        </script>
+    </head>
+    
+
+    <body>
+            <p>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Prevent Object Mutation</li>
+                </ul>
+                
+            </p>
+        </body>
+</html>

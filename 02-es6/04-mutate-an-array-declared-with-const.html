@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+
+            const s = [5, 7, 2];
+            function editInPlace() {
+                "use strict";
+                // s = [2, 5, 7]; <- this is invalid
+
+                s[0] = 2;
+                s[1] = 5;
+                s[2] = 7;
+
+                console.log(s);
+            }
+            editInPlace();
+
+        </script>
+    </head>
+    
+
+    <body>
+            <p>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Mutate an Array Declared with <i>const</i></li>
+                </ul>
+                
+            </p>
+        </body>
+</html>

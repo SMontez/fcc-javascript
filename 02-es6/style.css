@@ -26,6 +26,41 @@ a:hover{
     color:rgba(255, 196,0,1);
 }
 
+.code-block{
+    margin-left:50px;
+}
+
+.sub-code{
+    margin-left:50px;
+}
+
+code{
+    line-height:1.5em;
+    font-family:'Courier New', Courier, monospace;
+}
+
 li.home{
     list-style-type:none;
 }
+
+.kw{
+    color:rgb(197, 69, 197);
+}
+
+.vari{
+    color:white;
+}
+
+.syntax{
+    color:rgb(18, 136, 190);
+}
+
+.value{
+    color:rgb(109, 223, 109);
+}
+
+.op-cmd{
+    color:orange;
+}
+
+
