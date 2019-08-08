@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            const myConcat = (arr1, arr2) => arr1.concat(arr2);
+            // test your code
+            console.log(myConcat([1, 2], [3, 4, 5]));
+
+        </script>
+    </head>
+
+    <body>
+            <p>
+                <ul>
+                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Write Arrow Functions with Parameters</li>
+                </ul>
+            </p>
+            <div class="code-block">
+                    <code class="kw">var</code> <code class="syntax">myConcat</code> <code class="kw">= function</code><code class="syntax">(</code><code class="p-vari">arr1</code><code class="syntax">, </code> <code class="p-vari">arr2</code><code class="syntax">) {</code>
+                        <div class="sub-code">
+                        <code class="syntax">"</code><code class="value">use strict</code><code class="syntax">";</code><br>
+                        <code class="syntax">return</code> <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code><br>
+                    </div>
+                      <code class="syntax">};</code>
+            </div>
+            <p>Converted to :</p>
+            <div class="code-block">
+                <code class="kw">const</code> <code class="syntax">myConcat</code> <code class="kw">=</code> <code class="vari">(</code><code class="p-vari">arr1</code><code class="syntax">, </code> <code class="p-vari">arr2</code><code class="vari">)</code>
+                    <code class="kw">=></code> <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code>
+            </div>
+        </body>
+</html>
