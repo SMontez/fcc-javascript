@@ -26,23 +26,46 @@
                 <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Exploring Var vs Let</li>
             </ul>
         </p>
+        
         <div class="code-block">
+            <h3>Original Code</h3>
             <code>
-                <code class="kw">let</code> <code class="vari">catName</code><code class="syntax">;</code><br>
-                <code class="kw">let</code> <code class="vari">quote</code><code class="syntax">;</code><br>
-                <code class="kw">function</code> <code class="syntax">catTalk() {</code><br>
+                var catName;<br>
+                var quote;<br>
+                function catTalk() {<br>
                 <div class="sub-code">
-                    <code class="syntax">"</code><code class="value">use strict</code><code class="syntax">";</code><br>
-                    <div class="sub-code">
-                        <code class="vari">catName</code> <code class="kw">=</code> <code class="syntax">"</code><code class="value">Oliver</code><code class="syntax">";</code><br>
-                        <code class="vari">quote</code> <code class="syntax">=</code> <code class="vari">catName</code> <code class="kw">+</code> <code class="syntax">"</code> <code class="value"> says Meow!</code><code class="syntax">";</code><br>
-                        <code class="op-cmd">console</code><code class="syntax">.log</code><code class="vari">(quote)</code><code class="syntax">;</code>
-                    </div>
-                    <code class="syntax">}</code>
+                    <code>
+                        "use strict";<br>
+                    
+                        catName = "Oliver";<br>
+                        quote = catName + " says Meow!";<br>
+                    </code>
                 </div>
-                <code class="syntax">catTalk</code><code class="vari">()</code><code class="syntax">;</code>
+                
+                }
+                catTalk();
             </code>
         </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                <code class="diff">let</code> catName;<br>
+                <code class="diff">let</code> quote;<br>
+                function catTalk() {<br>
+                <div class="sub-code">
+                    <code>
+                        "use strict";<br>
+                    
+                        catName = "Oliver";<br>
+                        quote = catName + " says Meow!";<br>
+                    </code>
+                </div>
+                
+                }
+                catTalk();
+            </code>
+        </div>
+        <div class="notes">* Results can be seen in the console for this example</div>
     </body>
 </html>
 

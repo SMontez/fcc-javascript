@@ -28,11 +28,48 @@
     
 
     <body>
-            <p>
-                <ul>
-                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Declare a Read-Only variable with <i>const</i></li>
-                </ul>
-                
-            </p>
-        </body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Declare a Read-Only variable with <i>const</i></li>
+            </ul>    
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function printManyTimes(str) {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        var sentence = str + " is cool!";<br>
+                        for(var i = 0; i &lt; str.length; i+=2) {
+                        <div class="sub-code">
+                            console.log(sentence);
+                        </div>
+                        }<br>
+                    </div>
+                  }<br>
+                  printManyTimes("freeCodeCamp");
+            </code>
+        </div>
+
+
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function printManyTimes(str) {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        <code class="diff">const SENTENCE</code> = str + " is cool!";<br>
+                        for(<code class="diff">let</code> i = 0; i &lt; str.length; i+=2) {
+                        <div class="sub-code">
+                            console.log(<code class="diff">SENTENCE</code>);
+                        </div>
+                        }<br>
+                    </div>
+                    }<br>
+                    printManyTimes("freeCodeCamp");
+            </code>
+        </div>
+
+        <div class="notes">* Results can be seen in the console for this example</div>
+    </body>
 </html>

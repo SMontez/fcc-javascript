@@ -25,11 +25,49 @@
     
 
     <body>
-            <p>
-                <ul>
-                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Comparing Scope of Var vs Let</li>
-                </ul>
-                
-            </p>
-        </body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Comparing Scope of Var vs Let</li>
+            </ul>
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function checkScope() {
+                <div class="sub-code">
+                    "use strict";<br>
+                    var i = "function scope";<br>
+                    if (true) {
+                        <div class="sub-code">
+                        i = "block scope";<br>
+                        console.log("Block scope i is: ", i);<br>
+                    </div>
+                    }<br>
+                    console.log("Function scope i is: ", i);<br>
+                    return i;
+                </div>
+                }
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function checkScope() {
+                <div class="sub-code">
+                    "use strict";<br>
+                    <code class="diff">let</code> i = "function scope";<br>
+                    if (true) {
+                        <div class="sub-code">
+                        <code class="diff">let</code> i = "block scope";<br>
+                        console.log("Block scope i is: ", i);<br>
+                    </div>
+                    }<br>
+                    console.log("Function scope i is: ", i);<br>
+                    return i;
+                </div>
+                }
+            </code>
+        </div>
+        <div class="notes">* Results can be seen in the console for this example</div>
+    </body>
 </html>

@@ -26,11 +26,41 @@
     
 
     <body>
-            <p>
-                <ul>
-                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Mutate an Array Declared with <i>const</i></li>
-                </ul>
-                
-            </p>
-        </body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Mutate an Array Declared with <i>const</i></li>
+            </ul>
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const s = [5, 7, 2];<br>
+                function editInPlace() {
+                <div class="sub-code">
+                  "use strict";<br>
+                  // s = [2, 5, 7]; &lt;- this is invalid
+                </div>
+                }<br>
+                editInPlace();
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const s = [5, 7, 2];<br>
+                function editInPlace() {
+                <div class="sub-code">
+                    "use strict";<br>
+                    <code class="diff">
+                        s[0] = 2;<br>
+                        s[1] = 5;<br>
+                        s[2] = 7;<br>
+                    </code>
+                </div>
+                }<br>
+                editInPlace();
+            </code>
+        </div>
+        <div class="notes">* Results can be seen in the console for this example</div>
+    </body>
 </html>

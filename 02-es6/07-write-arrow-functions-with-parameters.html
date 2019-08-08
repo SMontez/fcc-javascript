@@ -21,17 +21,23 @@
                 </ul>
             </p>
             <div class="code-block">
-                    <code class="kw">var</code> <code class="syntax">myConcat</code> <code class="kw">= function</code><code class="syntax">(</code><code class="p-vari">arr1</code><code class="syntax">, </code> <code class="p-vari">arr2</code><code class="syntax">) {</code>
+                    <code class="kw">var</code> <code class="syntax">myConcat</code>
+                    <code class="kw">= function</code><code class="syntax">(</code><code class="p-vari">arr1</code><code class="syntax">, </code>
+                    <code class="p-vari">arr2</code><code class="syntax">) {</code>
                         <div class="sub-code">
                         <code class="syntax">"</code><code class="value">use strict</code><code class="syntax">";</code><br>
-                        <code class="syntax">return</code> <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code><br>
+                        <code class="syntax">return</code>
+                        <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code><br>
                     </div>
                       <code class="syntax">};</code>
             </div>
             <p>Converted to :</p>
             <div class="code-block">
-                <code class="kw">const</code> <code class="syntax">myConcat</code> <code class="kw">=</code> <code class="vari">(</code><code class="p-vari">arr1</code><code class="syntax">, </code> <code class="p-vari">arr2</code><code class="vari">)</code>
-                    <code class="kw">=></code> <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code>
+                <code class="kw">const</code> <code class="syntax">myConcat</code> <code class="kw">=</code>
+                <code class="vari">(</code><code class="p-vari">arr1</code><code class="syntax">,
+                </code> <code class="p-vari">arr2</code><code class="vari">)</code>
+                <code class="kw">=></code>
+                <code class="vari">arr1</code><code class="syntax">.concat</code><code class="vari">(arr2)</code><code class="syntax">;</code>
             </div>
         </body>
 </html>

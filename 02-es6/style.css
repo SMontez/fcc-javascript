@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.75);
     color:rgb(255, 196, 0);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -12,12 +12,12 @@ p{
 
 li{
     list-style-type:decimal-leading-zero;
-    color:rgba(255, 0, 0, 1);
+    color:rgb(208, 208, 208);
     margin: .75em 0;
 }
 
 a{
-    color:rgba(255, 0, 0, 1);
+    color:rgb(255, 255, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
@@ -26,8 +26,16 @@ a:hover{
     color:rgba(255, 196,0,1);
 }
 
+li.home{
+    list-style-type:none;
+}
+
 .code-block{
-    margin-left:50px;
+    margin:25px 50px;
+    padding:25px 50px 50px 50px;
+    border-radius: 1em;
+    background-color: white;
+    color:black;
 }
 
 .sub-code{
@@ -39,32 +47,13 @@ code{
     font-family:'Courier New', Courier, monospace;
 }
 
-li.home{
-    list-style-type:none;
-}
-
-.kw{
-    color:rgb(197, 69, 197);
-}
-
-.vari{
-    color:white;
-}
-
-.p-vari{
+.diff{
     color:red;
+    font-weight:bold;
 }
 
-.syntax{
-    color:rgb(18, 136, 190);
+.notes{
+    margin: 50px;
+    font-style: italic;
 }
-
-.value{
-    color:rgb(109, 223, 109);
-}
-
-.op-cmd{
-    color:orange;
-}
-
 
