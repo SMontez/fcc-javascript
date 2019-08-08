@@ -13,22 +13,27 @@
     </head>
 
     <body>
-            <p>
-                <ul>
-                    <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use Arrow Functions to Write Concise Anonymous Functions</li>
-                </ul>
-            </p>
-            <div class="code-block">
-                <code class="kw">var</code> <code class="syntax">magic</code> <code class="kw">= function</code><code class="syntax">() {</code>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use Arrow Functions to Write Concise Anonymous Functions</li>
+            </ul>
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                var magic = function() {
                 <div class="sub-code">
-                    <code class="syntax">"</code><code class="value">use strict</code><code class="syntax">";</code><br>
-                    <code class="syntax">return</code> <code class="kw">new</code> <code class="op-cmd">Date</code><code class="vari">()</code><code class="syntax">;</code>
+                    "use strict";
+                    return new Date();
                 </div>
-                <code class="syntax">};</code>
-            </div>
-            <p>Converted to :</p>
-            <div class="code-block">
-                <code class="kw">const</code> <code class="syntax">magic</code> <code class="kw">=</code> <code class="syntax">()</code> <code class="kw">=> new</code> <code class="op-cmd">Date</code><code class="vari">()</code><code class="syntax">;</code>
-            </div>
-        </body>
+                };
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code class="diff">const</code> <code>magic =</code> <code class="diff">() =></code> <code> new Date()</code>;
+            </code>
+        </div>
+        <div class="notes">* Results can be seen in the console for this example</div>
+    </body>
 </html>
