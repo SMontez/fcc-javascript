@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <script>
+            const increment = (number, value = 1) => number + value;
+            console.log(increment(5, 2)); // returns 7
+            console.log(increment(5)); // returns 6
+        </script>
+    </head>
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Set Default Parameters for Functions</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                    const increment = <code class="removed">(function() {
+                        <div class="sub-code">
+                            "use strict";<br>
+                            return function increment</code>(number, value) <code class="removed">{</code>
+                            <div class="sub-code">
+                                return number + value;
+                            </div>
+                            <code class="removed">};
+                        </div>
+                    })();</code><br>
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const increment = (number, value <code class="diff">= 1</code>) <code class="diff">=></code> number + value;
+            </code>
+        </div>
+        <div class="notes">
+            <code class="removed">* Code Removed / Replaced</code><br>
+            <code class="diff">* Code Added</code>
+            <div>* Results can be seen in the console for this example</div>
+        </div>
+    </body>
+</html>

@@ -48,11 +48,17 @@ code{
 }
 
 .diff{
+    color:darkorange;
+    font-weight:bold;
+}
+
+.removed{
     color:red;
     font-weight:bold;
 }
 
 .notes{
+    color:yellow;
     margin: 50px;
     font-style: italic;
 }

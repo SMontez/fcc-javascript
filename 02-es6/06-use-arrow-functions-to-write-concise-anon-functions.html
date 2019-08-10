@@ -21,10 +21,10 @@
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-                var magic = function() {
+                <code class="removed">var</code> magic = <code class="removed">function</code>()<code class="removed"> {
                 <div class="sub-code">
-                    "use strict";
-                    return new Date();
+                    "use strict";<br>
+                    return</code> new Date();
                 </div>
                 };
             </code>
@@ -34,6 +34,10 @@
             <code class="diff">const</code> <code>magic =</code> <code class="diff">() =></code> <code> new Date()</code>;
             </code>
         </div>
-        <div class="notes">* Results can be seen in the console for this example</div>
+        <div class="notes">
+            <code class="removed">* Code Removed / Replaced</code><br>
+            <code class="diff">* Code Added</code>
+            <div>* Results can be seen in the console for this example</div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            const sum = ( function() {
+                "use strict";
+                return function sum(...args) {
+                    return args.reduce((a, b) => a + b, 0);
+                };
+            })();
+            console.log("Test #1 : sum(1, 8) = " + sum(1, 8)); // 9
+            console.log("Test #2 : sum(1, 2, 3) = " + sum(1, 2, 3,)); // 6
+            console.log("Test #3 : sum(2, 7, 4, 3) = " + sum(2, 7, 4, 3)); // 16
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use the Rest Operator with Function Parameters</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const sum = (function() {
+                    <div class="sub-code">
+                    "use strict";<br>
+                    return function sum(<code class="removed">x, y, z</code>) {
+                        <div class="sub-code">
+                        <code class="removed">const args = [ x, y, z ];</code><br>
+                        return args.reduce((a, b) => a + b, 0);
+                        </div>
+                    };
+                </div>
+                    })();
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const sum = (function() {
+                <div class="sub-code">
+                    "use strict";<br>
+                    return function sum(<code class="diff">...args</code>) {
+                        <div class="sub-code">
+                            return args.reduce((a, b) => a + b, 0);
+                        </div>
+                    };
+                </div>
+                })();
+            
+            </code>
+        </div>
+        <div class="notes">
+            <code class="removed">* Code Removed / Replaced</code><br>
+            <code class="diff">* Code Added</code>
+            <div>* Results can be seen in the console for this example</div>
+        </div>
+    </body>
+</html>
