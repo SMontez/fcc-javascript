@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            const AVG_TEMPERATURES = {
+                today: 77.5,
+                tomorrow: 79
+            };
+
+            function getTempOfTmrw(avgTemperatures) {
+                "use strict";
+                const {tomorrow:tempOfTomorrow} = avgTemperatures; 
+                return tempOfTomorrow;
+            }
+            console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+
+
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use Destructuring Assignment to Assign Variables from Objects</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const AVG_TEMPERATURES = {
+                <div class="sub-code">
+                    today: 77.5,<br>
+                    tomorrow: 79
+                </div>
+                };<br></br>
+                
+                function getTempOfTmrw(avgTemperatures) {
+                <div class="sub-code">
+                    "use strict";<br><br>
+                    const tempOfTomorrow = <code class="removed">undefined</code>;<br><br>
+                    return tempOfTomorrow;
+                </div>
+                }<br>
+                
+                console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const AVG_TEMPERATURES = {
+                    <div class="sub-code">
+                        today: 77.5,<br>
+                        tomorrow: 79
+                    </div>
+                  };<br></br>
+                  
+                  function getTempOfTmrw(avgTemperatures) {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        const <code class="diff">{tomorrow:</code>tempOfTomorrow<code class="diff">}</code> = <code class="diff">avgTemperatures</code>; <br><br>
+                        
+                        return tempOfTomorrow;
+                    </div>
+                  }<br>
+                  
+                  console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

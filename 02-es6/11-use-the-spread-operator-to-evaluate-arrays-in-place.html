@@ -7,7 +7,13 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-
+            const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+            let arr2;
+            (function() {
+                "use strict";
+                arr2 = [...arr1]; // change this line
+            })();
+            console.log(arr2);
 
 
 
@@ -30,7 +36,7 @@
                     (function() {
                         <div class="sub-code">
                       "use strict";<br>
-                      arr2 = []; // change this line
+                      arr2 = [<code class="removed"><i>Insert code here</i></code>]; // change this line
                     </div>
                     })();<br>
                     console.log(arr2);
@@ -39,7 +45,15 @@
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];<br>
+                let arr2;<br>
+                (function() {
+                <div class="sub-code">
+                  "use strict";<br>
+                  arr2 = [<code class="diff">...args</code>];
+                </div>
+                })();
+                console.log(arr2);
             
             </code>
         </div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            const LOCAL_FORECAST = {
+                today: { min: 72, max: 83 },
+                tomorrow: { min: 73.3, max: 84.6 }
+            };
+            function getMaxOfTmrw(forecast) {
+                "use strict";
+                const {tomorrow:{max:maxOfTomorrow}} = forecast; // change this line
+                return maxOfTomorrow;
+            }
+            console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use Destructuring Assignment to Assign Variables from Nested Objects</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const LOCAL_FORECAST = {
+                <div class="sub-code">
+                    today: { min: 72, max: 83 },<br>
+                    tomorrow: { min: 73.3, max: 84.6 }
+                </div>
+                };<br><br>
+                
+                function getMaxOfTmrw(forecast) {
+                <div class="sub-code">
+                    "use strict";<br>
+                    const maxOfTomorrow = <code class="removed">undefined</code>; // change this line<br>
+                    return maxOfTomorrow;
+                </div>
+                }<br>                
+                console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const LOCAL_FORECAST = {
+                    <div class="sub-code">
+                        today: { min: 72, max: 83 },<br>
+                        tomorrow: { min: 73.3, max: 84.6 }
+                    </div>
+                    };<br><br>
+                    
+                    function getMaxOfTmrw(forecast) {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        const <code class="diff">{tomorrow:{max:</code>maxOfTomorrow<code class="diff">}} = forecast</code>;<br>
+                        return maxOfTomorrow;            
+                    </div>
+                }<br>                
+                console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
