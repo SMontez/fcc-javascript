@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            const createPerson = (name, age, gender) => {
+            "use strict";
+            
+            return {name, age, gender};
+            
+            };
+            console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+
+
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Write Concise Object Literal Declarations Using Simple Fields</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const createPerson = (name, age, gender) => {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        return {
+                            <div class="sub-code">
+                                <code class="removed">name:</code> name,<br>
+                                <code class="removed">age:</code> age,<br>
+                                <code class="removed">gender:</code> gender
+                        </div>
+                        };
+                    </div>
+                    };<br>
+                    console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const createPerson = (name, age, gender) => {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        return {name, age, gender};
+                    </div>
+                    };<br>
+                    console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object            
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
