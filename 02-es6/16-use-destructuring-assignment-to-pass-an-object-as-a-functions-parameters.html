@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            //Setup a Constant Object
+            const stats = {
+                max: 56.78,
+                standard_deviation: 4.34,
+                median: 34.54,
+                mode: 23.87,
+                min: -0.75,
+                average: 35.85
+            };
+
+            //Destructure it's values in-line
+            const half = (function() {
+                                        "use strict";
+                                        return (({max, min}) => {return (max + min) / 2.0;})
+                                    }
+                        )();
+            console.log(stats); // should be object
+            console.log(half(stats)); // should be 28.015
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use Destructuring Assignment to Pass an Object as a Function's Parameterssson Title</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                const stats = {
+                    <div class="sub-code">
+                        max: 56.78,<br>
+                        standard_deviation: 4.34,<br>
+                        median: 34.54,<br>
+                        mode: 23.87,<br>
+                        min: -0.75,<br>
+                        average: 35.85
+                    </div>
+                  };<br><br>
+                  const half = (function() {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        <code class="removed">return function half</code>(<code class="removed">stats</code>) {
+                        <div class="sub-code">
+                            return (<code class="removed">stats.</code>max + <code class="removed">stats.</code>min) / 2.0;
+                        </div>
+                        };<br>
+                    </div>
+                  })();<br><br>
+                  console.log(stats); // should be object<br>
+                  console.log(half(stats)); // should be 28.015
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                const stats = {
+                    <div class="sub-code">
+                        max: 56.78,<br>
+                        standard_deviation: 4.34,<br>
+                        median: 34.54,<br>
+                        mode: 23.87,<br>
+                        min: -0.75,<br>
+                        average: 35.85
+                    </div>
+                  };<br><br>
+                  const half = (function() {
+                    <div class="sub-code">
+                        "use strict";<br>
+                        return (<code class="diff">({max, min})</code> <code class="diff">=></code> {
+                        <div class="sub-code">
+                            return (max + min) / 2.0;<code class="diff">}</code>)
+                        </div>
+                    </div>
+                  })();<br><br>
+                  console.log(stats); // should be object<br>
+                  console.log(half(stats)); // should be 28.015
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
