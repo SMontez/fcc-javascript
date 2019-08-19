@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function makeClass() {
+                "use strict";
+                class Vegetable {
+                    constructor(name){
+                    this.name = name;
+                    }
+                }
+                return Vegetable;
+            }
+            const Vegetable = makeClass();
+            const carrot = new Vegetable('carrot');
+            console.log(carrot.name); // => should be 'carrot'
+
+
+
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use class Syntax to Define a Constructor Function</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function makeClass() {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        <code class="removed">Add/Alter code below this line</code><br><br>
+                        return Vegetable;
+                    </div>
+                }<br><br>
+                const Vegetable = makeClass();<br>
+                const carrot = new Vegetable('carrot');<br>
+                console.log(carrot.name); // => should be 'carrot'
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function makeClass() {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        <code class="diff">
+                            class Vegetable {
+                            <div class="sub-code">
+                                constructor(name){
+                                <div class="sub-code">
+                                    this.name = name;
+                                </div>
+                                }
+                            </div>
+                            }<br>
+                        </code>
+                        return Vegetable;
+                    </div>
+                }<br><br>
+                const Vegetable = makeClass();<br>
+                const carrot = new Vegetable('carrot');<br>
+                console.log(carrot.name); // => should be 'carrot'
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
