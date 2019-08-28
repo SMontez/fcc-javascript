@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <script type="module" src="./24-main.js"></script>
+    </head>
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use * to Import Everything from a File</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                "use strict";<br>
+                <code class="removed">&lt; add code here &gt; </code>
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                "use strict";<br>
+                <code class="diff">
+                    import * as myFunctions from "./string_functions.js";<br>
+                    import { foo, bar } from './string_functions.js';<br><br>
+
+                    console.log(myFunctions.capitalizeString(foo));<br>
+                    console.log(myFunctions.capitalizeString(bar));
+                </code>
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > ES6</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function makeClass() {
+                "use strict";
+                /* Alter code below this line */
+                class Thermostat{
+                    constructor(temp){
+                        this._temp = temp;
+                    }
+
+                    get celcius(){
+                        return 5/9 * (this._temp - 32);
+                    }
+
+                    set celcius(celcius){
+                        this.farenheit = celcius * 9.0 / 5 + 32;
+                    }
+                }
+                /* Alter code above this line */
+                return Thermostat;
+            }
+            const Thermostat = makeClass();
+            var fTemp = 98.6;
+            var cTemp = 37;
+            const thermos = new Thermostat(fTemp); // setting in Fahrenheit scale
+            console.log(thermos.celcius + "° C");
+            thermos.celcius = cTemp;
+            console.log(thermos.farenheit + "° F");
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Exploring ES6 Features - Use getters and setters to Control Access to an Object</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function makeClass() {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        
+                        <code class="removed">&lt; Insert Code Here &gt;</code><br><br>
+                    
+                        return Thermostat;
+                    </div>
+                }<br>
+                const Thermostat = makeClass();<br>
+                const thermos = new Thermostat(76); // setting in Fahrenheit scale<br>
+                let temp = thermos.temperature; // 24.44 in C<br>
+                thermos.temperature = 26;<br>
+                temp = thermos.temperature; // 26 in C<br> 
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function makeClass() {
+                    <div class="sub-code">
+                        "use strict";<br><br>
+                        
+                        <code class="diff">
+                            class Thermostat{
+                                <div class="sub-code">
+                                constructor(temp){
+                                    <div class="sub-code">
+                                        this._temp = temp;
+                                    </div>
+                                }<br>
+
+                                get celcius(){
+                                    <div class="sub-code">
+                                        return 5/9 * (this._temp - 32);
+                                    </div>
+                                }<br>
+
+                                set celcius(celcius){
+                                    <div class="sub-code">
+                                        this.farenheit = celcius * 9.0 / 5 + 32;
+                                    </div>
+                                }
+                            </div>
+                            }
+                        </code><br>
+                        return Thermostat;
+                    </div>
+                }<br><br>
+                const Thermostat = makeClass();<br>
+                <code class="diff">
+                    var fTemp = 98.6;<br>
+                    var cTemp = 37;<br>
+                    const thermos = new Thermostat(fTemp);<br>
+                    console.log(thermos.celcius + "° C");<br>
+                    thermos.celcius = cTemp;<br>
+                    console.log(thermos.farenheit + "° F");<br>
+                <code class="diff">
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
