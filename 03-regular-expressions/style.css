@@ -11,6 +11,11 @@ h2{
     font-size: 1.25em;    
 }
 
+.comment{
+    color:rgb(168,64,168);
+    font-weight:bold;
+}
+
 ul{margin-left:100px;
 
 }

@@ -7,32 +7,33 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let quoteSample = "The five boxing wizards jump quickly.";
+            let alphabetRegexV2 = /[\w+]/g;
+            let result = quoteSample.match(alphabetRegexV2).length;
+            console.log("The sample quote\n\n\"" + quoteSample + "\"\n\nhas " + result + " characters - not including spaces or periods");
         </script>
     </head>
-    
-
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match All Letters and Numbers</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let quoteSample = "The five boxing wizards jump quickly.";<br>
+                let alphabetRegexV2 = /<code class="removed">change</code>/;<br>
+                let result = quoteSample.match(alphabetRegexV2).length;
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let quoteSample = "The five boxing wizards jump quickly.";<br>
+                let alphabetRegexV2 = /<code class="diff">[\w+]</code>/<code class="diff">g</code>;<br>
+                let result = quoteSample.match(alphabetRegexV2).length;
             </code>
         </div>
         <div class="notes">

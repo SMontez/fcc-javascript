@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let twinkleStar = "Twinkle, twinkle, little star";
+            let starRegex = /twinkle/gi;
+            let result = twinkleStar.match(starRegex);
+            console.log(result);
         </script>
     </head>
     
@@ -17,21 +18,25 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Find More Than the First Match</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
+                let twinkleStar = "Twinkle, twinkle, little star";<br>
+                let starRegex = /<code class="removed">change</code>/;<br>
+                let result = <code class="removed">twinkleStar</code>;
 
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                let twinkleStar = "Twinkle, twinkle, little star";<br>
+                let starRegex = /<code class="diff">twinkle</code>/<code class="diff">gi</code>;<br>
+                let result = twinkleStar<code class="diff">.match(starRegex)</code>;
             
             </code>
         </div>

@@ -7,7 +7,13 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
+            // example crowd gathering
+            let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+            let reCriminals = /C+/; // Change this line
+
+            let matchedCriminals = crowd.match(reCriminals);
+            console.log(matchedCriminals);
 
         
         </script>
@@ -17,21 +23,30 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Find One or More Criminals in a Hunt</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let crowd = 'P1P2P3P4P5P6CCCP7P8P9';<br><br>
+                
+                let reCriminals = /<code class="removed">.</code>/; <br>
+                
+                let matchedCriminals = crowd.match(reCriminals);<br>
+                console.log(matchedCriminals);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
+                let crowd = 'P1P2P3P4P5P6CCCP7P8P9';<br><br>
             
+                let reCriminals = /<code class="diff">C+</code>/; <br>
+                
+                let matchedCriminals = crowd.match(reCriminals);<br>
+                console.log(matchedCriminals);
             
             </code>
         </div>

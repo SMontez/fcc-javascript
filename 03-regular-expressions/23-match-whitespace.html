@@ -7,32 +7,34 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let sample = "Whitespace is important in separating words";
+            let countWhiteSpace = /\s/g; // Change this line
+            let result = sample.match(countWhiteSpace);
+            console.log("The sample string \n\n\"" + sample + "\"\n\nhas " + result.length + " white space characters.");
         </script>
     </head>
     
-
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Whitespace</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let sample = "Whitespace is important in separating words";<br>
+                let countWhiteSpace = /<code class="removed">change</code>/; <br>
+                let result = sample.match(countWhiteSpace);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let sample = "Whitespace is important in separating words";<br>
+                let countWhiteSpace = /<code class="diff">\s</code>/<code class="diff">g</code>; <br>
+                let result = sample.match(countWhiteSpace);
             </code>
         </div>
         <div class="notes">

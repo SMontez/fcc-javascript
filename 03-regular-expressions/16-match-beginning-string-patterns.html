@@ -7,9 +7,12 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let rickyAndCal = "Cal and Ricky both like racing.";
+            let calRegex = /^Cal/;
+            let result = calRegex.test(rickyAndCal);
+            console.log(result);
+            let resultStr = rickyAndCal.match(calRegex);
+            console.log(resultStr);
         </script>
     </head>
     
@@ -17,22 +20,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Beginning String Patterns</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let rickyAndCal = "Cal and Ricky both like racing.";<br>
+                let calRegex = /<code class="removed">change</code>/;<br>
+                let result = calRegex.test(rickyAndCal);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let rickyAndCal = "Cal and Ricky both like racing.";<br>
+                let calRegex = /<code class="diff">^Cal</code>/;<br>
+                let result = calRegex.test(rickyAndCal);
             </code>
         </div>
         <div class="notes">

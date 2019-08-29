@@ -7,13 +7,12 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let extractStr = "Extract the word 'coding' from this string.";
+            let codingRegex = /coding/;
+            let result = extractStr.match(codingRegex);
+            console.log(result);
         </script>
     </head>
-    
-
     <body>
         <p>
             <ul>
@@ -24,14 +23,17 @@
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let extractStr = "Extract the word 'coding' from this string.";<br>
+                let codingRegex = /<code class="removed">change</code>/;<br>
+                let result = <code class="removed">extractStr</code>;
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                let extractStr = "Extract the word 'coding' from this string.";<br>
+                let codingRegex = /<code class="diff">coding</code>/;<br>
+                let result = extractStr<code class="diff">.match(codingRegex)</code>;
             
             </code>
         </div>

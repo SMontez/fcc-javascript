@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+            let waldoRegex = /Waldo/; // Change this line
+            let result = waldoRegex.test(waldoIsHiding);
+            console.log(result);
         </script>
     </head>
     
@@ -17,22 +18,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Literal Strings</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let waldoIsHiding = "Somewhere Waldo is hiding in this text.";<br>
+                let waldoRegex = /<code class="removed">search</code>/;<br>
+                let result = waldoRegex.test(waldoIsHiding);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let waldoIsHiding = "Somewhere Waldo is hiding in this text.";<br>
+                let waldoRegex = /<code class="diff">Waldo</code>/; // Change this line<br>
+                let result = waldoRegex.test(waldoIsHiding);
             </code>
         </div>
         <div class="notes">

@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let quoteSample = "The quick brown fox jumps over the lazy dog.";
+            let alphabetRegex = /[a-z]/gi; // Change this line
+            let result = quoteSample.match(alphabetRegex); // Change this line
+            console.log(result);
         </script>
     </head>
     
@@ -17,22 +18,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Letters of the Alphabet</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let quoteSample = "The quick brown fox jumps over the lazy dog.";<br>
+                let alphabetRegex = /<code class="removed">change</code>/; <br>
+                let result = alphabetRegex; <br>
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let quoteSample = "The quick brown fox jumps over the lazy dog.";<br>
+                let alphabetRegex = /<code class="diff">[a-z]</code>/<code class="diff">gi</code>; <br>
+                let result = <code class="diff">quoteSample.match(</code>alphabetRegex<code class="diff">)</code>;
             </code>
         </div>
         <div class="notes">

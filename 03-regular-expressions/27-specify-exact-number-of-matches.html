@@ -7,32 +7,33 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let timStr = "Timmmmber";
+            let timRegex = /Tim{4}ber/;
+            let result = timRegex.test(timStr);
+            console.log("The timStr string had exactly 4 'm's : " + result);
         </script>
     </head>
-    
-
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Specify Exact Number of Matches</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let timStr = "Timmmmber";<br>
+                let timRegex = /<code class="removed">change</code>/; <br>
+                let result = timRegex.test(timStr);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let timStr = "Timmmmber";<br>
+                let timRegex = /<code class="diff">Tim{4}ber</code>/; <br>
+                let result = timRegex.test(timStr);
             </code>
         </div>
         <div class="notes">

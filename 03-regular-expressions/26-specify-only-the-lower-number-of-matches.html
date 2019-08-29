@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let haStr = "Hazzzzah";
+            let haRegex = /Haz{4,}ah/; // Change this line
+            let result = haRegex.test(haStr);
+            console.log("The haStr string had at least 4 'z's : " + result);
         </script>
     </head>
     
@@ -17,22 +18,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Specify Only the Lower Number of Matches</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let haStr = "Hazzzzah";<br>
+                let haRegex = /<code class="removed">change</code>/;<br>
+                let result = haRegex.test(haStr);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let haStr = "Hazzzzah";<br>
+                let haRegex = /<code class="diff">Haz{4,}ah</code>/;<br>
+                let result = haRegex.test(haStr);
             </code>
         </div>
         <div class="notes">

@@ -7,7 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
+            let quoteSample = "Blueberry 3.141592653s are delicious.";
+            let myRegex = /[h-s2-6]/gi; // Change this line
+            let result = quoteSample.match(myRegex); // Change this line
+            console.log(result);
 
         
         </script>
@@ -17,21 +20,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Numbers and Letters of the Alphabet</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let quoteSample = "Blueberry 3.141592653s are delicious.";<br>
+                let myRegex = /<code class="removed">change</code>/;<br>
+                let result = <code class="removed">myRegex</code>;
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                let quoteSample = "Blueberry 3.141592653s are delicious.";<br>
+                let myRegex = /<code class="diff">[h-s2-6]</code>/<code class="diff">gi</code>;<br>
+                let result = <code class="diff">quoteSample.match(</code>alphabetRegex<code class="diff">)</code>;
             
             </code>
         </div>

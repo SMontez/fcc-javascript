@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let favWord = "favorite";
+            let favRegex = /favou?rite/; // Change this line
+            let result = favRegex.test(favWord);
+            console.log("The favWord string '" + favWord + "' was spelled without a 'u' but \nwas matched due to the optional u - 'u?' in the regex : " + result);
         </script>
     </head>
     
@@ -17,22 +18,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Check for All or None</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let favWord = "favorite";<br>
+                let favRegex = /<code class="removed">change</code>/;<br>
+                let result = favRegex.test(favWord);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let favWord = "favorite";<br>
+                let favRegex = /<code class="diff">favou?rite</code>/;<br>
+                let result = favRegex.test(favWord);
             </code>
         </div>
         <div class="notes">

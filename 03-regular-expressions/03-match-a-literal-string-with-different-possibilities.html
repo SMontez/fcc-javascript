@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let petString = "James has a pet cat.";
+            let petRegex = /dog|cat|bird|fish/; // Change this line
+            let result = petRegex.test(petString);
+            console.log(result);
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match a Literal String with Different Possibilities</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let petString = "James has a pet cat.";<br>
+                let petRegex = /<code class="removed">change</code>/; <br>
+                let result = petRegex.test(petString);
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let petString = "James has a pet cat.";<br>
+                let petRegex = /<code class="diff">dog|cat|bird|fish</code>/;<br>
+                let result = petRegex.test(petString);
+            </code>
+        </div>
+        <div class="notes">
+            <code class="removed">* Code Removed / Replaced</code><br>
+            <code class="diff">* Code Added</code>
+            <div>* Results can be seen in the console for this example</div>
+        </div>
+    </body>
+</html>

@@ -7,9 +7,11 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let caboose = "The last car on a train is the caboose";
+            let lastRegex = /caboose$/; // Change this line
+            let result = lastRegex.test(caboose);
+            console.log(result);
+            console.log(caboose.match(lastRegex));
         </script>
     </head>
     
@@ -17,22 +19,24 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Ending String Patterns</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
-
+                let caboose = "The last car on a train is the caboose";<br>
+                let lastRegex = /<code class="removed">change</code>/; <br>
+                let result = lastRegex.test(caboose);
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
-            
+                let caboose = "The last car on a train is the caboose";<br>
+                let lastRegex = /<code class="diff">caboose$</code>/; <br>
+                let result = lastRegex.test(caboose);
             </code>
         </div>
         <div class="notes">

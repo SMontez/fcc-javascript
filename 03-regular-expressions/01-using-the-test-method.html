@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let myString = "Hello, World!";
+            let myRegex = /Hello/;
+            let result = myRegex.test(myString);
+            console.log(result);
         </script>
     </head>
     
@@ -17,21 +18,25 @@
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Using the Test Method</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
+                let myString = "Hello, World!";<br>
+                let myRegex = /Hello/;<br>
+                let result = myRegex <code class="removed">&lt; add code here &gt;</code>; 
 
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                let myString = "Hello, World!";<br>
+                let myRegex = /Hello/;<br>
+                let result = myRegex<code class="diff">.test(myString)</code>; 
             
             </code>
         </div>

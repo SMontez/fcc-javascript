@@ -7,31 +7,34 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let exampleStr = "Let's have fun with regular expressions!";
+            let unRegex = /.un/;
+            let result = unRegex.test(exampleStr);
+            console.log(result);
         </script>
     </head>
-    
-
     <body>
         <p>
             <ul>
-                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Lesson Title</li>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Match Anything with Wildcard Period</li>
             </ul>
             
         </p>
         <div class="code-block">
             <h3>Original Code</h3>
             <code>
-            
+                let exampleStr = "Let's have fun with regular expressions!";<br>
+                let unRegex = /<code class="removed">change</code>/;<br>
+                let result = unRegex.test(exampleStr);
 
             </code>
         </div>
         <div class="code-block">
             <h3>New Code</h3>
             <code>
-            
+                let exampleStr = "Let's have fun with regular expressions!";<br>
+                let unRegex = /<code class="diff">.un</code>/;<br>
+                let result = unRegex.test(exampleStr);
             
             </code>
         </div>
