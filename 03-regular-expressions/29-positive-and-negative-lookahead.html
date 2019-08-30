@@ -7,9 +7,10 @@
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
         
         <script>
-        
-
-        
+            let sampleWord = "astronaut";
+            let pwRegex = /^(?=\w{5,})(?=\D*\d{2,})/; // Change this line
+            let result = pwRegex.test(sampleWord);
+            console.log(result);
         </script>
     </head>
     
@@ -33,7 +34,7 @@
             <h3>New Code</h3>
             <code>
                 let sampleWord = "astronaut";<br>
-                let pwRegex = /<code class="diff">change</code>/;<br>
+                let pwRegex = /<code class="diff">^(?=\w{5,})(?=\D*\d{2,})</code>/;<br>
                 let result = pwRegex.test(sampleWord);
             </code>
         </div>
