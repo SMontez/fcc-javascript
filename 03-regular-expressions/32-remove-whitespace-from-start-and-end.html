@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let hello = "   Hello, World!  ";
+            let wsRegex = /^\s+|\s+$/g; //ensures either side or both with the | 'or' option
+            let result = hello.replace(wsRegex, '');
+            console.log("'" + result + "'");
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Remove Whitespace from Start and End</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let hello = "   Hello, World!  ";<br>
+                let wsRegex = /<code class="removed">change</code>/;<br>
+                let result = hello;
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let hello = "   Hello, World!  ";<br>
+                let wsRegex = /<code class="diff">^\s+|\s+$</code>/<code class="diff">g</code>/;<br>
+                let result = hello.replace(wsRegex, '');
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
