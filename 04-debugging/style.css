@@ -1,0 +1,81 @@
+body
+{
+    background-color: rgba(0,0,0,.75);
+    color:rgb(255, 196, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color:rgb(224, 160, 0);
+    text-decoration: underline double;
+    font-size: 1.25em;    
+}
+
+.comment{
+    color:rgb(168,64,168);
+    font-weight:bold;
+}
+
+.exercise-list{
+    margin-left:100px;
+}
+
+li{
+    list-style-type:decimal-leading-zero;
+    color:rgb(208, 208, 208);
+    margin: .75em 0;
+}
+
+a{
+    color:rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(255, 196,0,1);
+}
+
+li.home{
+    list-style-type:none;
+}
+
+.numbered{
+    color:black; 
+    list-style-type: decimal-leading-zero;
+    margin-left:20px;
+}
+
+.code-block{
+    margin:25px 50px;
+    padding:25px 50px 50px 50px;
+    border-radius: 1em;
+    background-color: white;
+    color:black;
+}
+
+.sub-code{
+    margin-left:50px;
+}
+
+code{
+    line-height:1.5em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.diff{
+    color:darkorange;
+    font-weight:bold;
+}
+
+.removed{
+    color:red;
+    font-weight:bold;
+}
+
+.notes{
+    color:yellow;
+    margin: 50px;
+    font-style: italic;
+}
+
