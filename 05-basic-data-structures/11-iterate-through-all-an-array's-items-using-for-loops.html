@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function filteredArray(arr, elem) {
+                let newArr = [];
+
+                for (let i = 0; i < arr.length; i++){
+                    if (arr[i].indexOf(elem) == -1){
+                    newArr.push(arr[i]);
+                    }
+                }
+                return newArr;
+            }
+            console.log(filteredArray([[10, 8, 3], [14, 6, 23], [3, 18, 6]], 18));
+            console.log(filteredArray([["trumpets", 2], ["flutes", 4], ["saxophones", 2] ], 2));
+            console.log(filteredArray([["amy", "beth", "sam"], ["dave", "sean", "peter"] ], "peter"));
+            console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));        
+
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Iterate Through All an Array's Items Using For Loops</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function filteredArray(arr, elem) {
+                    <div class="sub-code">
+                        let newArr = [];<br>
+                        <code class="removed">&lt;insert code here&gt;</code><br>
+                        return newArr;
+                    </div>
+                }<br>
+                console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function filteredArray(arr, elem) {
+                    <div class="sub-code">
+                        let newArr = [];<br>
+                        <code class="diff">&lt;insert code here&gt;</code><br>
+                        return newArr;
+                    </div>
+                }<br>
+                console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

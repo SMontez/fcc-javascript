@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let user = {
+                name: 'Kenneth',
+                age: 28,
+                data: {
+                    username: 'kennethCodesAllDay',
+                    joinDate: 'March 26, 2016',
+                    organization: 'freeCodeCamp',
+                    friends: [
+                    'Sam',
+                    'Kira',
+                    'Tomo'
+                    ],
+                    location: {
+                    city: 'San Francisco',
+                    state: 'CA',
+                    country: 'USA'
+                    }
+                }
+            };
+
+            function addFriend(userObj, friend) {
+                userObj.data.friends.push(friend);
+                return user.data.friends;
+            }
+
+            console.log("Current Friends\n===============\n" + user.data.friends);
+            console.log('\n...Adding Pete to Friends List...\n\n');
+            console.log(addFriend(user, 'Pete'));
+            console.log("\nUpdated Friends List\n====================\n" + user.data.friends);
+
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Modify an Array Stored in an Object</li>
+            </ul>
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let user = {
+                    <div class="sub-code">
+                        name: 'Kenneth',<br>
+                        age: 28,<br>
+                        data: {
+                            <div class="sub-code">
+                                username: 'kennethCodesAllDay',<br>
+                                joinDate: 'March 26, 2016',<br>
+                                organization: 'freeCodeCamp',<br>
+                                friends: [
+                                    <div class="sub-code">
+                                        'Sam',<br>
+                                        'Kira',<br>
+                                        'Tomo'
+                                    </div>
+                                ],<br>
+                                location: {
+                                    <div class="sub-code">
+                                        city: 'San Francisco',<br>
+                                        state: 'CA',<br>
+                                        country: 'USA'
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                  };<br><br>
+                  
+                  function addFriend(userObj, friend) {
+                    <div class="sub-code">
+                        <code class="removed">&lt;insert code here&gt;</code><br>
+                    </div>
+                  }<br><br>                  
+                  console.log(addFriend(user, 'Pete'));
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let user = {
+                    <div class="sub-code">
+                        name: 'Kenneth',<br>
+                        age: 28,<br>
+                        data: {
+                            <div class="sub-code">
+                                username: 'kennethCodesAllDay',<br>
+                                joinDate: 'March 26, 2016',<br>
+                                organization: 'freeCodeCamp',<br>
+                                friends: [
+                                    <div class="sub-code">
+                                        'Sam',<br>
+                                        'Kira',<br>
+                                        'Tomo'
+                                    </div>
+                                ],<br>
+                                location: {
+                                    <div class="sub-code">
+                                        city: 'San Francisco',<br>
+                                        state: 'CA',<br>
+                                        country: 'USA'
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                };<br><br>
+                  
+                function addFriend(userObj, friend) {
+                    <div class="sub-code">
+                        <code class="diff">
+                                userObj.data.friends.push(friend);<br>
+                                return user.data.friends;
+                        </code><br>
+                    </div>
+                }<br><br>                  
+                <code class="diff">
+                    console.log("Current Friends\n===============\n" + user.data.friends);<br>
+                    console.log('\n...Adding Pete to Friends List...\n\n');<br>
+                </code>
+                console.log(addFriend(user, 'Pete'));<br>
+                <code class="diff">
+                    console.log("\nUpdated Friends List\n====================\n" + user.data.friends);
+                </code>
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

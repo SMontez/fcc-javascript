@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let users = {
+                Alan: {
+                    age: 27,
+                    online: false
+                },
+                Jeff: {
+                    age: 32,
+                    online: true
+                },
+                Sarah: {
+                    age: 48,
+                    online: false
+                },
+                Ryan: {
+                    age: 19,
+                    online: true
+                }
+            };
+
+            function countOnline(obj) {
+                let count = 0;
+                for (let user in users){
+                    if (users[user].online === true) {
+                    count++;
+                    }
+                }
+                return count;
+            }
+
+            console.log(countOnline(users));        
+
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Iterate Through the Keys of an Object with a for--in Statement</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let users = {
+                    <div class="sub-code">
+                        Alan : { age: 27, online: true },<br>
+                        Jeff : { age: 32, online: true },<br>
+                        Sarah: { age: 48, online: true },<br>
+                        Ryan : { age: 19, online: true }
+                    </div>
+                };<br>
+                function countOnline(obj) {
+                    <div class="sub-code">
+                        <code class="removed">&lt;insert code here&gt;</code><br>
+                    </div>
+                }<br>
+                  console.log(countOnline(users));
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let users = {
+                    <div class="sub-code">
+                        Alan : { age: 27, online: true },<br>
+                        Jeff : { age: 32, online: true },<br>
+                        Sarah: { age: 48, online: true },<br>
+                        Ryan : { age: 19, online: true }
+                    </div>
+                };<br>
+                function countOnline(obj) {
+                    <div class="sub-code">
+                        <code class="diff">
+                            let count = 0;<br>
+                            for (let user in users)<br>
+                            {
+                                <div class="sub-code">
+                                    if (users[user].online === true)<br>
+                                    {
+                                        <div class="sub-code">
+                                            count++;
+                                        </div>
+                                    }
+                                </div>
+                            }<br>
+                            return count;
+                        </code><br>
+                    </div>
+                }<br>
+                  console.log(countOnline(users));
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

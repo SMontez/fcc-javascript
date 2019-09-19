@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function quickCheck(arr, elem) {
+                return arr.indexOf(elem) > 0 ? true : false;
+            }
+
+            // change code here to test different cases:
+            console.log("Does the array ['squash', 'onions', 'shallots'] include 'mushrooms'?\n" + quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+            console.log("\nDoes the array ['squash', 'onions', 'shallots'] include 'onions'?\n" + quickCheck(["squash", "onions", "shallots"], "onions"));
+            console.log("\nDoes the array [3, 5, 9, 125, 45, 2] include 125'?\n" + quickCheck([3, 5, 9, 125, 45, 2], 125));
+            console.log("\nDoes the array [true, false, false] include undefined?\n" + quickCheck([true, false, false], undefined));
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Check For The Presence of an Element With indexOf()</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                function quickCheck(arr, elem) {
+                    <div class="sub-code">
+                        <code class="removed">&lt;insert code here&gt;</code>;<br>
+                    </div>
+                }<br>
+                console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                function quickCheck(arr, elem) {
+                    <div class="sub-code">
+                        <code class="diff">return arr.indexOf(elem) > 0 ? true : false;</code>;<br>
+                    </div>
+                }<br>
+                console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

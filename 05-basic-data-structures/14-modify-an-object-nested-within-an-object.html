@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let userActivity = {
+                id: 23894201352,
+                date: 'January 1, 2017',
+                data: {
+                    totalUsers: 51,
+                    online: 42
+                }
+            };
+            console.log("userActivity.data.online (before change) : " + userActivity.data.online);
+            userActivity.data.online = 45;         
+            console.log("userActivity.data.online (after change)  : " + userActivity.data.online);
+            console.log(userActivity);
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Modify an Object Nested Within an Object</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let userActivity = {
+                    <div class="sub-code">
+                        id: 23894201352,<br>
+                        date: 'January 1, 2017',<br>
+                        data: {
+                            <div class="sub-code">
+                                totalUsers: 51,<br>
+                                online: 42
+                            </div>
+                        }
+                    </div>
+                };<br>
+                
+                <code class="removed">&lt;insert code here&gt;</code><br>
+                console.log(userActivity);
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let userActivity = {
+                    <div class="sub-code">
+                        id: 23894201352,<br>
+                        date: 'January 1, 2017',<br>
+                        data: {
+                            <div class="sub-code">
+                                totalUsers: 51,<br>
+                                online: 42
+                            </div>
+                        }
+                    </div>
+                };<br>
+                
+                <code class="diff">
+                    console.log("userActivity.data.online (before change) : " + userActivity.data.online);<br>
+                    userActivity.data.online = 45;<br>
+                    console.log("userActivity.data.online (after change)  : " + userActivity.data.online);
+                </code><br>
+                console.log(userActivity);
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let foods = {
+                apples: 25,
+                oranges: 32,
+                plums: 28
+            };
+
+            foods['bananas'] = 13;      //added with name
+            foods['grapes'] = 35;       //added with name
+            foods.strawberries = 27;    //added with dot notation (either method is valid)
+
+            console.log(foods);
+
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Add Key-Value Pairs to JavaScript Objects</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let foods = {
+                    <div class="sub-code">
+                        apples: 25,<br>
+                        oranges: 32,<br>
+                        plums: 28
+                    </div>
+                };<br>
+                <code class="removed">&lt;insert code here&gt;</code><br>
+                console.log(foods);
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let foods = {
+                    <div class="sub-code">
+                        apples: 25,<br>
+                        oranges: 32,<br>
+                        plums: 28
+                    </div>
+                };<br>
+                <code class="diff">
+                    foods['bananas'] = 13;<br>
+                    foods.['grapes'] = 35;<br>
+                    foods.strawberries = 27;<br></code>
+                console.log(foods);
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

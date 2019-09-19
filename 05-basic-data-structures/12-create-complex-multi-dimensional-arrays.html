@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            let myNestedArray =
+            [
+                'level-1', 
+                    ['level-2', 'loop', 'shift', 6, 7, 1000, 'method',
+                        ['level-3', 'deep',
+                            ['level-4', 'deeper',
+                                ['level-5', 'deepest']
+                            ]
+                        ]
+                    ],
+                ['level-2', 'unshift', false, 1, 2, 3, 'complex', 'nested'],
+                ['level-2', 'concat', false, true, 'spread', 'array'],
+                ['level-2', 'mutate', 1327.98, 'splice', 'slice', 'push'],
+                ['level-2', 'iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+            ];
+            
+            console.log
+            (
+                myNestedArray[0] + '\n' + 
+                myNestedArray[1][0] + '\n' + 
+                myNestedArray[1][7][0] + " : " + myNestedArray[1][7][1] + '\n' + 
+                myNestedArray[1][7][2][0] + " : " + myNestedArray[1][7][2][1] + '\n' + 
+                myNestedArray[1][7][2][2][0] + " : " + myNestedArray[1][7][2][2][1]
+            );
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Create complex multi-dimensional arrays</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let myNestedArray = <br>
+                [
+                    <div class="sub-code">
+                        <code class="removed">
+                            ['unshift', false, 1, 2, 3, 'complex', 'nested'],<br>
+                            ['loop', 'shift', 6, 7, 1000, 'method'],<br>
+                            ['concat', false, true, 'spread', 'array'],<br>
+                            ['mutate', 1327.98, 'splice', 'slice', 'push'],<br>
+                            ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+                        </code>
+                    </div>
+                ];
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let myNestedArray = <br>
+                [<code class="diff">'level-1',</code>
+                    <div class="sub-code">
+                        [<code class="diff">'level-2',</code>'loop', 'shift', 6, 7, 1000, 'method',<code class="diff">
+                            <div class="sub-code">
+                                ['level-3','deep',
+                                <div class="sub-code">
+                                    ['level-4', 'deeper',
+                                    <div class="sub-code">
+                                        ['level-5', 'deepest']
+                                    </div>
+                                ]
+                            </div>
+                            ]
+                        </div></code>
+                        ],<br>
+                        [<code class="diff">'level-2',</code>'unshift', false, 1, 2, 3, 'complex', 'nested'],<br>
+                        [<code class="diff">'level-2',</code>'concat', false, true, 'spread', 'array'],<br>
+                        [<code class="diff">'level-2',</code>'mutate', 1327.98, 'splice', 'slice', 'push'],<br>
+                        [<code class="diff">'level-2',</code>'iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']</code>
+                    </div>
+                ];<br><br>
+
+                <code class="diff">
+                console.log<br>
+                (
+                    <div class="sub-code">
+                        myNestedArray[0] + '\n' + <br>
+                        myNestedArray[1][0] + '\n' + <br>
+                        myNestedArray[1][7][0] + " : " + myNestedArray[1][7][1] + '\n' + <br>
+                        myNestedArray[1][7][2][0] + " : " + myNestedArray[1][7][2][1] + '\n' + <br>
+                        myNestedArray[1][7][2][2][0] + " : " + myNestedArray[1][7][2][2][1]
+                    </div>
+                );
+            </code><br><br>
+
+            <code class="comment">
+                    * NOTE *
+                    <div class="sub-code">
+                            The console.log() section was added for displaying each level<br>
+                            and at levels 3, 4, and 5, and the reqeusted array entries of<br>
+                            strings of 'deep', 'deeper', and 'deepest'.
+                    </div>
+                </code><br>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

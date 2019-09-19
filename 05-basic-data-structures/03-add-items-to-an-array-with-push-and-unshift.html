@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+            function mixedNumbers(arr) {
+                arr.unshift('I',2,'three');
+                arr.push(7,'VIII',9);
+                return arr;
+            }
+            console.log(mixedNumbers(['IV', 5, 'six'])); 
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Add Items to an Array with push() and unshift()</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                    function mixedNumbers(arr) {
+                        <div class="sub-code">
+                            <code class="removed">&lt;insert code here&gt;</code><br>
+                            return arr;
+                        </div>
+                      }<br>
+                      console.log(mixedNumbers(['IV', 5, 'six']));
+
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                    function mixedNumbers(arr) {
+                        <div class="sub-code">
+                            <code class="diff">
+                                    arr.unshift('I',2,'three');<br>
+                                    arr.push(7,'VIII',9);
+                            </code><br>
+                            return arr;
+                        </div>
+                      }<br>
+                      console.log(mixedNumbers(['IV', 5, 'six']));
+            
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

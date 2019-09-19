@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+        let users = {
+            Alan: {
+                age: 27,
+                online: true
+            },
+            Jeff: {
+                age: 32,
+                online: true
+            },
+            Sarah: {
+                age: 48,
+                online: true
+            },
+            Ryan: {
+                age: 19,
+                online: true
+            }
+        };
+
+        function isEveryoneHere(obj) { 
+          return users.hasOwnProperty('Alan', 'Jeff', 'Sarah', 'Ryan') ? true : false;
+        }
+
+        console.log(isEveryoneHere(users));
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Check if an Object has a Property</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>
+                let users = {
+                    <div class="sub-code">
+                        Alan : { age: 27, online: true },<br>
+                        Jeff : { age: 32, online: true },<br>
+                        Sarah: { age: 48, online: true },<br>
+                        Ryan : { age: 19, online: true }
+                    </div>
+                };<br><br>
+                function isEveryoneHere(obj) {
+                    <div class="sub-code">
+                        <code class="removed">&lt;insert code here&gt;</code><br>
+                    </div>
+                }<br>
+                  console.log(isEveryoneHere(users));
+            </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>
+                let users = {
+                <div class="sub-code">
+                    Alan : { age: 27, online: true },<br>
+                    Jeff : { age: 32, online: true },<br>
+                    Sarah: { age: 48, online: true },<br>
+                    Ryan : { age: 19, online: true }
+                </div>
+                };<br><br>
+                function isEveryoneHere(obj) {
+                    <div class="sub-code">
+                        <code class="diff">return users.hasOwnProperty('Alan', 'Jeff', 'Sarah', 'Ryan') ? true : false;</code><br>
+                    </div>
+                }<br>
+                  console.log(isEveryoneHere(users));
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>

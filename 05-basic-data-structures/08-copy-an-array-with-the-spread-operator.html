@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FCC > Javascript > Regular Expressions in JavaScript</title>
+        <link rel="stylesheet" href="style.css" tpe="text/stylesheet">
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        
+        <script>
+        function copyMachine(arr, num) {
+            let newArr = [];
+            while (num >= 1) {
+                newArr.push([...arr]);   
+                num--;
+            }
+            return newArr;
+        }
+        console.log(copyMachine([true, false, true], 2));
+
+        
+        </script>
+    </head>
+    
+
+    <body>
+        <p>
+            <ul>
+                <li class="home"><a href="index.html">Home</a> > Regular Expressions in JavaScript - Copy an Array with the Spread Operator</li>
+            </ul>
+            
+        </p>
+        <div class="code-block">
+            <h3>Original Code</h3>
+            <code>    
+                    function copyMachine(arr, num) {
+                        <div class="sub-code">
+                        let newArr = [];<br>
+                        while (num >= 1) {
+                            <div class="sub-code">
+                                <code class="removed">&lt;insert code here&gt;</code><br>
+                                num--;
+                            </div>
+                            }
+                        return newArr;
+                        </div>
+                    }
+                    console.log(copyMachine([true, false, true], 2));
+                </code>
+        </div>
+        <div class="code-block">
+            <h3>New Code</h3>
+            <code>    
+                function copyMachine(arr, num) {
+                    <div class="sub-code">
+                    let newArr = [];<br>
+                    while (num >= 1) {
+                        <div class="sub-code">
+                            <code class="diff">newArr.push([...arr]);</code><br>
+                            num--;
+                        </div>
+                        }
+                    return newArr;
+                    </div>
+                }
+                console.log(copyMachine([true, false, true], 2));
+            </code>
+        </div>
+        <div class="notes">
+                <code class="removed">* Code Removed / Replaced</code><br>
+                <code class="diff">* Code Added</code>
+                <div>* Results can be seen in the console for this example</div>
+            </div>
+    </body>
+</html>
